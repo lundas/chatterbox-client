@@ -18,12 +18,17 @@ var FormView = {
     // Make this function actually send a message to the Parse API.
 
     //$['input[name=message]'].val();
-    //var text = FormView.$form.find('input[type = text]').val()
-    //var user = App.username
-    //var room = RoomsView.$select.find('option[selected=true]').val()
+    var text = FormView.$form.find('input[type = text]').val();
+    var user = App.username;
+    var room = Rooms.selected;
 
-    // message = Messages.createMessage(user, text, room);
-    // Parse.create(message)
+    var message = {
+      username: user,
+      text: text,
+      roomname: room
+    };
+    Parse.create(message);
+    MessagesView.renderMessage(message);
 
     console.log('click!');
   },

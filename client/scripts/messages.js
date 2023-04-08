@@ -9,18 +9,18 @@ var Messages = {
 
   // TODO: Define methods which allow you to retrieve from,
   // add to, and generally interact with the messages.
-  createMessage: function(username, text, roomName) {
-    var message = {};
-    message.username = username;
-    message.text = text;
-    if (roomName = 'ALL') {
-      message.roomName = null;
-    } else {
-      message.roomName = roomName;
-    }
-    _data.push(message);
-    // return message
-  }
+  // createMessage: function(username, text, roomName) {
+  //   var message = {};
+  //   message.username = username;
+  //   message.text = text;
+  //   if (roomName = 'ALL') {
+  //     message.roomName = null;
+  //   } else {
+  //     message.roomName = roomName;
+  //   }
+  //   // _data.push(message);
+  //   return message;
+  // }
 
 
 

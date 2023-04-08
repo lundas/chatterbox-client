@@ -5,15 +5,22 @@
 var Rooms = {
 
   // TODO: Define how you want to store the list of rooms
-  _data: [],
+  _data: new Set(),
+  selected: '',
 
-  createRoom: function(roomName) {
-    var room = {};
-    room.name = roomName;
-    room.selected = false;
-    room.messages = [];
-    _data.push(room);
+  addRoom: function(roomName) {
+    Rooms._data.add(roomName);
   },
+
+  add: function(){ },
+
+  // createRoom: function(roomName) {
+  //   // var room = {};
+  //   // room.name = roomName;
+  //   // room.selected = false;
+  //   // room.messages = [];
+  //   // _data.push(room);
+  // },
 
   // iterate through rooms in _data
   // if room.name === roomName;
@@ -38,9 +45,21 @@ var Rooms = {
   // inputs: message
   // side effect: update room message list
   //
-  updateRoomMessage: null//renderRoom()
+  // updateRoomMessage: null//renderRoom()
 
   // TODO: Define methods which allow you to add rooms, update the list,
   // mark a room as selected, etc.
+
+  //add a function to get the array of roomName;
+  //getRoomList: function() {
+  // var arr = _data.map(room=>room.roomName)
+  // return arr;
+  //}
+
+  getRoomList: function() {
+    var arr = _data.map(room=>room.name);
+    return arr;
+  }
+
 
 };
