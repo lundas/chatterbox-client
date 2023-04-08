@@ -7,6 +7,7 @@ var Friends = {
 
 
   _data: [],
+
   addFriend: function(friendName) {
     if (Friends._data.indexOf(friendName) < 0) {
       Friends._data.push(friendName);

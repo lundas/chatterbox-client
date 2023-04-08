@@ -12,7 +12,7 @@ var Rooms = {
     Rooms._data.add(roomName);
   },
 
-  add: function(){ },
+  add: function() { },
 
   // createRoom: function(roomName) {
   //   // var room = {};

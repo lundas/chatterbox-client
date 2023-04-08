@@ -19,7 +19,7 @@ var App = {
     App.startSpinner();
     App.fetch(App.stopSpinner);
 
-    setInterval(App.fetch, 10000);
+    setInterval(App.fetch, 3000);
 
     // TODO: Make sure the app loads data from the API
     // continually, instead of just once at the start.
@@ -37,8 +37,10 @@ var App = {
 
       // TODO: Use the data to update Messages and Rooms
       // and re-render the corresponding views.
-      callback();
     });
+    MessagesView.render();
+    RoomsView.render();
+    callback();
   },
 
   startSpinner: function() {
