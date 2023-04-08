@@ -9,18 +9,29 @@ var RoomsView = {
   initialize: function() {
     // TODO: Perform any work which needs to be done
     // when this view loads.
+
+    // render -> render all messages
   },
 
   render: function() {
     // TODO: Render out the list of rooms.
+    // var arr = [];
+    //for loop(rooms._data)
+    //arr.push(ele[name]);
+
   },
 
   renderRoom: function(roomname) {
     // TODO: Render out a single room.
   },
 
+  renderAllMessages: function() {
+
+  },
   handleChange: function(event) {
     // TODO: Handle a user selecting a different room.
+
+    // when room select in select tag, call renderRoom
   },
 
   handleClick: function(event) {
